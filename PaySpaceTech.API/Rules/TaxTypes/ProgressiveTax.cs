@@ -1,10 +1,12 @@
 ﻿using PaySpaceTech.DataLayer.Models;
 
-namespace PaySpaceTech.API.Entities.TaxTypes
+namespace PaySpaceTech.API.Rules.TaxTypes
 {
-    public class ProgressiveTax : TaxType
+    public class ProgressiveTax : ITaxType
     {
-        public override decimal IncomeTax()
+        public string TaxTypeCode { get; set; } = "Progressive";
+
+        public decimal IncomeTax(decimal monthlyIncome)
         {
             //Holder list for tax brackets
             List<Bracket> brackets;
@@ -23,7 +25,6 @@ namespace PaySpaceTech.API.Entities.TaxTypes
             }
 
             //Get the monthly income for calculations
-            decimal monthlyIncome = GetMonthlyIncome();
             decimal annualIncome = monthlyIncome * 12;
 
             //Holder variable for the tax 

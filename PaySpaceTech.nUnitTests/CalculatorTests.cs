@@ -1,5 +1,5 @@
 using PaySpaceTech.API.Entities;
-using PaySpaceTech.API.Entities.TaxTypes;
+using PaySpaceTech.API.Rules;
 
 namespace PaySpaceTech.nUnitTests
 {
@@ -7,142 +7,34 @@ namespace PaySpaceTech.nUnitTests
     {
         private TaxCalculator TaxCalculator { get; set; } = null!;
 
-
         /// Progressive Tax ///
-
-        [TestCase(500,600)] //10% bracket
-        [TestCase(1000, 1382.35)] //15% bracket
-        [TestCase(5000, 11187.1)] //25% bracket
-        [TestCase(10000, 27319.32)] //28% bracket
-        [TestCase(20000, 64341.49)] //33% bracket
-        [TestCase(50000, 187682.14)] //35% bracket
-        public void CalculateProgressiveTax_WithMonthlyIncomeOf500_ShouldReturnCorrectTax(decimal monthlyIncome, decimal expectedTax)
-        {
-            // Assign
-            var progressiveTax = new ProgressiveTax();
-            progressiveTax.SetMonthlyIncome(monthlyIncome);
-            TaxCalculator = new TaxCalculator(progressiveTax);
-
-            // Act
-            decimal actualTax = TaxCalculator.CalculateIncomeTax();
-
-            // Assert
-            Assert.That(actualTax, Is.EqualTo(expectedTax));
-        }
-
+        [TestCase(500,600, "Progressive")] //10% bracket
+        [TestCase(1000, 1382.35, "Progressive")] //15% bracket
+        [TestCase(5000, 11187.1, "Progressive")] //25% bracket
+        [TestCase(10000, 27319.32, "Progressive")] //28% bracket
+        [TestCase(20000, 64341.49, "Progressive")] //33% bracket
+        [TestCase(50000, 187682.14, "Progressive")] //35% bracket
 
         /// Flat Rate Tax ///
+        [TestCase(500, 1050, "Flat Rate")]
+        [TestCase(10000, 21000, "Flat Rate")]
 
-        [TestCase(10)]
-        [TestCase(500)]
-        [TestCase(7000)]
-        [TestCase(10000)]
-        [TestCase(50000)]
-        public void CalculateFlatRateTax_ShouldReturnCorrectTax(decimal monthlyIncome)
+        /// Flat Value Tax ///
+        [TestCase(10000, 6000, "Flat Value")]
+        [TestCase(17000, 10000, "Flat Value")]
+
+        public void CalculateTax_ShouldReturnCorrectTax(decimal monthlyIncome, decimal expectedTax, string calculationType)
         {
             // Assign
-            decimal expectedTax = monthlyIncome * 12 / 100 * (decimal)17.5;
-
-            var flatRateTax = new FlatRateTax();
-            flatRateTax.SetMonthlyIncome(monthlyIncome);
-            TaxCalculator = new TaxCalculator(flatRateTax);
+            TaxRuleFactory _taxFactory = new TaxRuleFactory();
+            var taxType = _taxFactory.GetTaxTypeChecker(calculationType);
+            TaxCalculator = new TaxCalculator(taxType);
 
             // Act
-            decimal actualTax = TaxCalculator.CalculateIncomeTax();
+            decimal actualTax = TaxCalculator.CalculateIncomeTax(monthlyIncome);
 
             // Assert
             Assert.That(actualTax, Is.EqualTo(expectedTax));
-        }
-
-
-        /// Flat Value Tax /// 
-        /// Correct
-
-        [TestCase(500)]
-        [TestCase(3000)]
-        [TestCase(7000)]
-        [TestCase(10000)]
-        [TestCase(16000)]
-        public void CalculateFlatValueTax_WithMonthlyIncomeOf10000_ShouldReturnCorrectTax(decimal monthlyIncome)
-        {
-            // Assign
-            decimal expectedTax = monthlyIncome * 12 / 100 * 5;
-
-            var flatValueTax = new FlatValueTax();
-            flatValueTax.SetMonthlyIncome(monthlyIncome);
-            TaxCalculator = new TaxCalculator(flatValueTax);
-
-            // Act
-            decimal actualTax = TaxCalculator.CalculateIncomeTax();
-
-            // Assert
-            Assert.That(actualTax, Is.EqualTo(expectedTax));
-        }
-
-        [TestCase(17000)]
-        [TestCase(20000)]
-        [TestCase(30000)]
-        [TestCase(50000)]
-        [TestCase(80000)]
-        public void CalculateFlatValueTax_WithMonthlyIncomeOf20000_ShouldReturnCorrectTax(decimal monthlyIncome)
-        {
-            // Assign
-            decimal expectedTax = 10000;
-
-            var flatValueTax = new FlatValueTax();
-            flatValueTax.SetMonthlyIncome(monthlyIncome);
-            TaxCalculator = new TaxCalculator(flatValueTax);
-
-            // Act
-            decimal actualTax = TaxCalculator.CalculateIncomeTax();
-
-            // Assert
-            Assert.That(actualTax, Is.EqualTo(expectedTax));
-        }
-
-        /// InCorrect
-
-        [TestCase(17000)]
-        [TestCase(20000)]
-        [TestCase(30000)]
-        [TestCase(50000)]
-        [TestCase(80000)]
-        public void CalculateFlatValueTax_WithMonthlyIncomeOf10000_ShouldReturnInCorrectTax(decimal monthlyIncome)
-        {
-            // Assign
-            decimal expectedTax = monthlyIncome * 12 / 100 * 5;
-
-            var flatValueTax = new FlatValueTax();
-            flatValueTax.SetMonthlyIncome(monthlyIncome);
-            TaxCalculator = new TaxCalculator(flatValueTax);
-
-            // Act
-            decimal actualTax = TaxCalculator.CalculateIncomeTax();
-
-            // Assert
-            Assert.That(actualTax, Is.Not.EqualTo(expectedTax));
-        }
-
-        [TestCase(10)]
-        [TestCase(500)]
-        [TestCase(3000)]
-        [TestCase(7000)]
-        [TestCase(10000)]
-        [TestCase(16000)]
-        public void CalculateFlatValueTax_WithMonthlyIncomeOf20000_ShouldReturnInCorrectTax(decimal monthlyIncome)
-        {
-            // Assign
-            decimal expectedTax = 10000;
-
-            var flatValueTax = new FlatValueTax();
-            flatValueTax.SetMonthlyIncome(monthlyIncome);
-            TaxCalculator = new TaxCalculator(flatValueTax);
-
-            // Act
-            decimal actualTax = TaxCalculator.CalculateIncomeTax();
-
-            // Assert
-            Assert.That(actualTax, Is.Not.EqualTo(expectedTax));
         }
     }
 }

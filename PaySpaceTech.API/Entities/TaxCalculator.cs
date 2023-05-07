@@ -1,18 +1,18 @@
-﻿using PaySpaceTech.API.Entities.TaxTypes;
+﻿using PaySpaceTech.API.Rules;
 
 namespace PaySpaceTech.API.Entities
 {
     public class TaxCalculator
     {
-        private TaxType _taxType;
-        public TaxCalculator(TaxType taxType)
+        private ITaxType _taxType;
+        public TaxCalculator(ITaxType taxType)
         {
             this._taxType = taxType;
         }
 
-        public decimal CalculateIncomeTax()
+        public decimal CalculateIncomeTax(decimal monthlyIncome)
         {
-            return _taxType.IncomeTax();
+            return _taxType.IncomeTax(monthlyIncome);
         }
     }
 }

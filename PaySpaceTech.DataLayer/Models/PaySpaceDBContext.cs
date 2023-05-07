@@ -23,7 +23,10 @@ public partial class PaySpaceDBContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+        //MySQL
         => optionsBuilder.UseMySql("user id=payspace;pwd=P@yspace123;host=localhost;database=payspacedb", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.22-mysql"));
+        //MSSQL
+        //=> optionsBuilder.UseSqlServer("MainConnection");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

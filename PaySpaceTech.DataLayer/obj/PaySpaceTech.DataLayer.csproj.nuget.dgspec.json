@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\CorneSin\\Projects\\LearnProjects\\PaySpaceTech\\PaySpaceTech.DataLayer\\PaySpaceTech.DataLayer.csproj": {}
+    "C:\\Users\\Corne\\Downloads\\PaySpaceTech-main\\PaySpaceTech-main\\PaySpaceTech.DataLayer\\PaySpaceTech.DataLayer.csproj": {}
   },
   "projects": {
-    "F:\\CorneSin\\Projects\\LearnProjects\\PaySpaceTech\\PaySpaceTech.DataLayer\\PaySpaceTech.DataLayer.csproj": {
+    "C:\\Users\\Corne\\Downloads\\PaySpaceTech-main\\PaySpaceTech-main\\PaySpaceTech.DataLayer\\PaySpaceTech.DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\CorneSin\\Projects\\LearnProjects\\PaySpaceTech\\PaySpaceTech.DataLayer\\PaySpaceTech.DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Corne\\Downloads\\PaySpaceTech-main\\PaySpaceTech-main\\PaySpaceTech.DataLayer\\PaySpaceTech.DataLayer.csproj",
         "projectName": "PaySpaceTech.DataLayer",
-        "projectPath": "F:\\CorneSin\\Projects\\LearnProjects\\PaySpaceTech\\PaySpaceTech.DataLayer\\PaySpaceTech.DataLayer.csproj",
+        "projectPath": "C:\\Users\\Corne\\Downloads\\PaySpaceTech-main\\PaySpaceTech-main\\PaySpaceTech.DataLayer\\PaySpaceTech.DataLayer.csproj",
         "packagesPath": "C:\\Users\\Corne\\.nuget\\packages\\",
-        "outputPath": "F:\\CorneSin\\Projects\\LearnProjects\\PaySpaceTech\\PaySpaceTech.DataLayer\\obj\\",
+        "outputPath": "C:\\Users\\Corne\\Downloads\\PaySpaceTech-main\\PaySpaceTech-main\\PaySpaceTech.DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

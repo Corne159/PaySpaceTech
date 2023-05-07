@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using PaySpaceTech.DataLayer.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,7 +14,7 @@ builder.Services.AddSwaggerGen();
 // Add services to the container.
 var mainConnectionString = builder.Configuration.GetConnectionString("MainConnection") ?? throw new InvalidOperationException("Connection string 'MainConnection' not found.");
 
-// Database context
+// Database context MySQL
 builder.Services.AddDbContext<PaySpaceDBContext>(options =>
     options.UseMySql(
         mainConnectionString,
@@ -26,6 +27,11 @@ builder.Services.AddDbContext<PaySpaceDBContext>(options =>
                 errorNumbersToAdd: null);
         })
 );
+
+//// Database context MSSQL
+//builder.Services.AddDbContext<PaySpaceDBContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("MainConnection"))
+//);
 
 var app = builder.Build();
 

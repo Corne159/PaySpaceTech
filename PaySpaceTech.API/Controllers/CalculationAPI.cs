@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PaySpaceTech.API.Entities;
 using PaySpaceTech.API.Entities.Dto;
-using PaySpaceTech.API.Entities.TaxTypes;
+using PaySpaceTech.API.Rules;
 using PaySpaceTech.DataLayer.Models;
 
 namespace PaySpaceTech.API.Controllers
@@ -12,10 +12,12 @@ namespace PaySpaceTech.API.Controllers
     public class CalculationAPI : ControllerBase
     {
         private readonly PaySpaceDBContext _context;
+        private TaxRuleFactory _taxFactory;
 
         public CalculationAPI(PaySpaceDBContext context)
         {
             _context = context;
+            _taxFactory = new TaxRuleFactory();
         }
 
         [HttpPost(Name = "SaveCalculation")]
@@ -64,27 +66,10 @@ namespace PaySpaceTech.API.Controllers
 
             #region Do Calculation
 
-            //Depending on the CalculationType we can implement the correct TaxType at runtime
-            TaxType _taxType;
-            switch (postalCode.CalculationType)
-            {
-                case "Progressive":
-                    _taxType = new ProgressiveTax();
-                    break;
-                case "Flat Rate":
-                    _taxType = new FlatRateTax();
-                    break;
-                case "Flat Value":
-                    _taxType = new FlatValueTax();
-                    break;
-                default:
-                    _taxType = new ProgressiveTax();
-                    break;
-            }
-            _taxType.SetMonthlyIncome(dMonthlyIncome);
+            var taxType = _taxFactory.GetTaxTypeChecker(postalCode.CalculationType);
 
-            TaxCalculator _taxCalculator = new(_taxType);
-            var calcualtedValue = _taxCalculator.CalculateIncomeTax();
+            TaxCalculator _taxCalculator = new(taxType);
+            var calcualtedValue = _taxCalculator.CalculateIncomeTax(dMonthlyIncome);
 
             #endregion
 
@@ -103,6 +88,5 @@ namespace PaySpaceTech.API.Controllers
 
             return calcualtedValue;
         }
-
     }
 }

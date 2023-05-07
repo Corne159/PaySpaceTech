@@ -12,3 +12,17 @@ F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\obj\Debug
 F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.pdb
 F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.genruntimeconfig.cache
 F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\obj\Debug\net6.0\ref\PaySpaceTech.DataLayer.dll
+C:\Users\Corne\Downloads\PaySpaceTech-main\PaySpaceTech-main\PaySpaceTech.DataLayer\bin\Debug\net6.0\PaySpaceTech.DataLayer.deps.json
+C:\Users\Corne\Downloads\PaySpaceTech-main\PaySpaceTech-main\PaySpaceTech.DataLayer\bin\Debug\net6.0\PaySpaceTech.DataLayer.runtimeconfig.json
+C:\Users\Corne\Downloads\PaySpaceTech-main\PaySpaceTech-main\PaySpaceTech.DataLayer\bin\Debug\net6.0\PaySpaceTech.DataLayer.dll
+C:\Users\Corne\Downloads\PaySpaceTech-main\PaySpaceTech-main\PaySpaceTech.DataLayer\bin\Debug\net6.0\PaySpaceTech.DataLayer.pdb
+C:\Users\Corne\Downloads\PaySpaceTech-main\PaySpaceTech-main\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.csproj.AssemblyReference.cache
+C:\Users\Corne\Downloads\PaySpaceTech-main\PaySpaceTech-main\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Corne\Downloads\PaySpaceTech-main\PaySpaceTech-main\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.AssemblyInfoInputs.cache
+C:\Users\Corne\Downloads\PaySpaceTech-main\PaySpaceTech-main\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.AssemblyInfo.cs
+C:\Users\Corne\Downloads\PaySpaceTech-main\PaySpaceTech-main\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\Corne\Downloads\PaySpaceTech-main\PaySpaceTech-main\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.dll
+C:\Users\Corne\Downloads\PaySpaceTech-main\PaySpaceTech-main\PaySpaceTech.DataLayer\obj\Debug\net6.0\refint\PaySpaceTech.DataLayer.dll
+C:\Users\Corne\Downloads\PaySpaceTech-main\PaySpaceTech-main\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.pdb
+C:\Users\Corne\Downloads\PaySpaceTech-main\PaySpaceTech-main\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.genruntimeconfig.cache
+C:\Users\Corne\Downloads\PaySpaceTech-main\PaySpaceTech-main\PaySpaceTech.DataLayer\obj\Debug\net6.0\ref\PaySpaceTech.DataLayer.dll

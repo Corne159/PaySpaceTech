@@ -1964,6 +1964,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "PaySpaceTech.DataLayer": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
@@ -6620,11 +6621,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\CorneSin\\Projects\\LearnProjects\\PaySpaceTech\\PaySpaceTech.nUnitTests\\PaySpaceTech.nUnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\Corne\\Downloads\\PaySpaceTech-main\\PaySpaceTech-main\\PaySpaceTech.nUnitTests\\PaySpaceTech.nUnitTests.csproj",
       "projectName": "PaySpaceTech.nUnitTests",
-      "projectPath": "F:\\CorneSin\\Projects\\LearnProjects\\PaySpaceTech\\PaySpaceTech.nUnitTests\\PaySpaceTech.nUnitTests.csproj",
+      "projectPath": "C:\\Users\\Corne\\Downloads\\PaySpaceTech-main\\PaySpaceTech-main\\PaySpaceTech.nUnitTests\\PaySpaceTech.nUnitTests.csproj",
       "packagesPath": "C:\\Users\\Corne\\.nuget\\packages\\",
-      "outputPath": "F:\\CorneSin\\Projects\\LearnProjects\\PaySpaceTech\\PaySpaceTech.nUnitTests\\obj\\",
+      "outputPath": "C:\\Users\\Corne\\Downloads\\PaySpaceTech-main\\PaySpaceTech-main\\PaySpaceTech.nUnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -6649,8 +6650,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\CorneSin\\Projects\\LearnProjects\\PaySpaceTech\\PaySpaceTech.API\\PaySpaceTech.API.csproj": {
-              "projectPath": "F:\\CorneSin\\Projects\\LearnProjects\\PaySpaceTech\\PaySpaceTech.API\\PaySpaceTech.API.csproj"
+            "C:\\Users\\Corne\\Downloads\\PaySpaceTech-main\\PaySpaceTech-main\\PaySpaceTech.API\\PaySpaceTech.API.csproj": {
+              "projectPath": "C:\\Users\\Corne\\Downloads\\PaySpaceTech-main\\PaySpaceTech-main\\PaySpaceTech.API\\PaySpaceTech.API.csproj"
             }
           }
         }

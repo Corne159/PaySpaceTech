@@ -9,33 +9,33 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PaySpaceTech
 build_property.RootNamespace = PaySpaceTech
-build_property.ProjectDir = F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech\
+build_property.ProjectDir = C:\Users\Corne\Downloads\PaySpaceTech-main\PaySpaceTech-main\PaySpaceTech\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech
+build_property.MSBuildProjectDirectory = C:\Users\Corne\Downloads\PaySpaceTech-main\PaySpaceTech-main\PaySpaceTech
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/CorneSin/Projects/LearnProjects/PaySpaceTech/PaySpaceTech/Views/Shared/Error.cshtml]
+[C:/Users/Corne/Downloads/PaySpaceTech-main/PaySpaceTech-main/PaySpaceTech/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/CorneSin/Projects/LearnProjects/PaySpaceTech/PaySpaceTech/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Corne/Downloads/PaySpaceTech-main/PaySpaceTech-main/PaySpaceTech/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/CorneSin/Projects/LearnProjects/PaySpaceTech/PaySpaceTech/Views/Tax/Calculate.cshtml]
+[C:/Users/Corne/Downloads/PaySpaceTech-main/PaySpaceTech-main/PaySpaceTech/Views/Tax/Calculate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4XENhbGN1bGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/CorneSin/Projects/LearnProjects/PaySpaceTech/PaySpaceTech/Views/_ViewImports.cshtml]
+[C:/Users/Corne/Downloads/PaySpaceTech-main/PaySpaceTech-main/PaySpaceTech/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/CorneSin/Projects/LearnProjects/PaySpaceTech/PaySpaceTech/Views/_ViewStart.cshtml]
+[C:/Users/Corne/Downloads/PaySpaceTech-main/PaySpaceTech-main/PaySpaceTech/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/CorneSin/Projects/LearnProjects/PaySpaceTech/PaySpaceTech/Views/Shared/_Layout.cshtml]
+[C:/Users/Corne/Downloads/PaySpaceTech-main/PaySpaceTech-main/PaySpaceTech/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ceosbss635

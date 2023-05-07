@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FEUa6J7BKdaDRoG1Qs7qzjyYlTZEVd2XlCQTkCRazXkdTMv2vpueDG+1yOuYN2GNeJE8p0mFFEEFQxhfAOMdtw==",
+  "dgSpecHash": "6Iz34bxlDj+M8Eya6L4KwaEkXY0NKX1ZMwmFsR3KOT3y1MEZ35cbmxzwuVnzZcotUGapJUr6xpG2QWwF2s5OOA==",
   "success": true,
-  "projectFilePath": "F:\\CorneSin\\Projects\\LearnProjects\\PaySpaceTech\\PaySpaceTech\\PaySpaceTech.csproj",
+  "projectFilePath": "C:\\Users\\Corne\\Downloads\\PaySpaceTech-main\\PaySpaceTech-main\\PaySpaceTech\\PaySpaceTech.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Corne\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Corne\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
