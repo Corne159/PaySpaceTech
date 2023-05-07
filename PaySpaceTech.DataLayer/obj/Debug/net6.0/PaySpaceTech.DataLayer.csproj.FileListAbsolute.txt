@@ -1,0 +1,14 @@
+F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\bin\Debug\net6.0\PaySpaceTech.DataLayer.deps.json
+F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\bin\Debug\net6.0\PaySpaceTech.DataLayer.runtimeconfig.json
+F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\bin\Debug\net6.0\PaySpaceTech.DataLayer.dll
+F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\bin\Debug\net6.0\PaySpaceTech.DataLayer.pdb
+F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.csproj.AssemblyReference.cache
+F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.AssemblyInfoInputs.cache
+F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.AssemblyInfo.cs
+F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.csproj.CoreCompileInputs.cache
+F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.dll
+F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\obj\Debug\net6.0\refint\PaySpaceTech.DataLayer.dll
+F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.pdb
+F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\obj\Debug\net6.0\PaySpaceTech.DataLayer.genruntimeconfig.cache
+F:\CorneSin\Projects\LearnProjects\PaySpaceTech\PaySpaceTech.DataLayer\obj\Debug\net6.0\ref\PaySpaceTech.DataLayer.dll

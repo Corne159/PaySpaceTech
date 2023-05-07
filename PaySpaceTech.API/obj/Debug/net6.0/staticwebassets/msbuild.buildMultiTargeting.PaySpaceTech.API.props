@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PaySpaceTech.API.props" />
+</Project>
